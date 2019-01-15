@@ -1,0 +1,30 @@
+[
+    {
+        "from": "./node_modules/bootstrap/dist/",
+        "to": "/libs/bootstrap"
+    },
+    {
+        "from": "./node_modules/jquery/dist/",
+        "to": "/libs/jquery"
+    },
+    {
+        "from": "./temp/style/",
+        "to": "/style"
+    },
+    {
+        "from": "./src/style/",
+        "to": "/fonts"
+    },
+    {
+        "from": "./src/js/",
+        "to": "/js"
+    },
+    {
+        "from": "./src/assets/",
+        "to": "/pictures"
+    },
+    {
+        "from": "./node_modules/reset-css/",
+        "to": "/reset"
+    }
+]

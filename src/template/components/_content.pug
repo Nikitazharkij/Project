@@ -1,0 +1,42 @@
+div.content
+    div.content-slider.block_roll
+        div.content-info
+            h1= info.logo
+            h2= info.about
+        div.content-slides
+            div.content-slides__show
+                -
+                each item in pictures
+                    img(src= item.href)
+
+            div.content-button__left
+                div.content-button__leftSpan(id= "left")
+                    span <
+            div.content-button__right
+                div.content-button__rightSpan(id= "right")
+                    span >
+            div.content-text
+                div.content-textInfo
+                    h2 stationary branding mockup
+                div.content-textSlogan
+                    h3
+                        | Etiam porta sem malesuada 
+                        span magna 
+                        | mollis euismod
+    div.content-icons.block_roll
+        div.content-icons__text
+            img(src= "/pictures/line.png")
+            div.content-icons__someText
+                p What we do
+            img(src= "/pictures/line.png")
+        div.content-icons__menu
+            -
+            each item in content
+                div.content-icons__menuFrame
+                    div.content-icons__menuBorder
+                        div.content-icons__place
+                            img(id= item.id src= item.href)
+                        div.content-icons__report
+                            h3= item.logo
+                            p= item.about
+

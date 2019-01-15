@@ -1,0 +1,96 @@
+$color1: #f5f5f5
+$color2: #333333
+$color3: #1abb9c
+$color4: #606060
+$color5: #0bf5c8
+
+$width1: 750px
+
+$font1: "BebasRegular"
+$font2: "RalewayExtraBold"
+$font3: "RalewayLight"
+
+@mixin flex($display, $direction, $justify, $align-items)
+    display: $display
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align-items
+
+@mixin style($fontSize, $color, $fontFamily)
+    font-size: $fontSize
+    color: $color
+    font-family: $fontFamily
+
+
+.header
+    background-color: $color1
+    box-sizing: content-box
+    padding: 0 20px
+    &-container
+        padding-top: 20px
+    &-contant
+        @include flex(flex, row, space-between, center)
+    &-circle
+        width: 50px
+        height: 50px
+        background-color: $color2
+        border-radius: 50%
+        position: relative
+    &-circle span
+        @include style(16px, white, $font1)
+        white-space: pre
+        position: absolute
+        top: 10px
+        left: 15px
+    &-nav
+        width: 550px
+        font-family: $font2
+        @media screen and (max-width: $width1)
+            display: none
+            width: 200px
+    &-nav_opened
+        display: block
+    &-nav ul
+        padding-left: 0
+        text-transform: uppercase
+        list-style-type: none
+        @include flex(flex, row, space-between, center)
+        @media screen and (max-width: $width1)
+            @include flex(flex, column, space-between, center)
+            position: absolute
+            top: 70px
+            right: 20px
+            z-index: 2
+            background-color: $color1
+    &-nav li
+        @media screen and (max-width: $width1)
+            margin-bottom: 10px
+            margin-right: 8px
+            margin-left: 8px
+    &-nav li:first-child a
+        color: $color3
+    &-nav a
+        font-size: 13px
+        color: $color4
+        text-decoration: none
+    &-nav a:hover
+        color: $color3
+    &-nav__items
+        display: none
+        @media screen and (max-width: $width1)
+            display: block
+    &-search
+        @include flex(flex, row, flex-end, center)
+    &-search__button
+        @include style(13px, white, $font2)
+        padding: 0 10px
+        background-color: $color5
+        text-transform: uppercase
+        line-height: 30px
+    &-search__button:hover
+        cursor: pointer
+    &-search__input
+        width: 300px
+        height: 24px
+    &-input_appear
+        display: none

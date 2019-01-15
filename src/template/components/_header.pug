@@ -1,0 +1,19 @@
+div.header
+    div.header-container.block_roll
+        div.header-contant
+            div.header-circle
+                span L   O
+                    br
+                    |O  M
+            div.header-nav
+                ul
+                    -
+                    each item in navItems
+                        li
+                            a(href= item.href)= item.name
+            div.header-nav__items
+                img(src= "/pictures/menuIcon.png")
+        div.header-search
+            input.header-search__input.header-input_appear(id="input" type="text" placeholder="Search")
+            div.header-search__button(id="button")
+                span Find

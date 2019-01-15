@@ -1,0 +1,97 @@
+{
+    "info": {
+        "logo": "Hello! We are Loom Studio",
+        "about": "a creative media agency that believes in the power of creative ideas and great desing."
+    },
+    "navItems": [{
+        "name": "Home",
+        "href": "/"
+    }, {
+        "name": "Pages",
+        "href": "/"
+    }, {
+        "name": "Journal",
+        "href": "/"
+    }, {
+        "name": "Portfolio",
+        "href": "/"
+    }, {
+        "name": "Features",
+        "href": "/"
+    }, {
+        "name": "Contact",
+        "href": "/"
+    }],
+
+    "pictures": [{
+        "href": "/pictures/tools.jpg"
+    }, {
+        "href": "/pictures/apartment.jpg"
+    }, {
+        "href": "/pictures/focus.jpg"
+    }],
+
+    "content": [{
+        "href": "/pictures/icons.png",
+        "id": "icon-print",
+        "logo": "Print design",
+        "about": "Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor."
+    }, {
+        "href": "/pictures/icons.png",
+        "id": "icon-tv",
+        "logo": "Motion video",
+        "about": "Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor."
+    }, {
+        "href": "/pictures/icons.png",
+        "id": "icon-present",
+        "logo": "Package design",
+        "about": "Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor."
+    }, {
+        "href": "/pictures/icons.png",
+        "id": "icon-clock",
+        "logo": "Time management",
+        "about": "Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor."
+    }],
+
+    "main": {
+        "info1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna posuere velit aliquet.",
+        "info2": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.",
+        "info3": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
+        "info4": "Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.",
+        "topic1": "1. Creative ideas",
+        "topic2": "2. Rapid solution",
+        "topic3": "3. Magic touch",
+        "topic4": "4. Award winning"
+    },
+
+    "mainPics": [{
+        "href": "/pictures/mainDisk.jpg",
+        "title": "Dısk cover Mockup",
+        "previewContent": "Music, PSD, Mockups",
+        "fullContent": "Nulla libero un pharetra augue etiam malesuada magna mollis. Nullam id dolor id nibh ultricies."
+    }, {
+        "href": "/pictures/mainBooklet.jpg",
+        "title": "John doe business Card",
+        "previewContent": "Corporate, Card",
+        "fullContent": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod erat a ante."
+    }, {
+        "href": "/pictures/mainDiagramm.jpg",
+        "title": "Infographic Elements",
+        "previewContent": "Element, Graphic",
+        "fullContent": "Euismod quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo."
+    }],
+
+    "select": [{
+        "tab": "Twitter",
+        "content": "Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna."
+    }, {
+        "tab": "Touch",
+        "content": "Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet."
+    }, {
+        "tab": "Popular",
+        "content": "Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor."
+    }, {
+        "tab": "About",
+        "content": "Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+    }]
+}

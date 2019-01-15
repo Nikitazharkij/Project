@@ -1,0 +1,145 @@
+$color1: #f5f5f5
+$color2: #333333
+$color3: #1abb9c
+$color4: #606060
+$color5: #0bf5c8
+$color6: #e1e1e1
+$color7: white
+
+$width4: 950px
+
+
+$height1: 45px
+$height2: 48px
+$height3: 310px
+
+$font1: "BebasRegular"
+$font2: "RalewayExtraBold"
+$font3: "RalewayLight"
+
+@mixin position($posTop)
+    position: absolute
+    top: $posTop
+
+@mixin flex($display, $direction, $justify, $align-items)
+    display: $display
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align-items
+
+@mixin style($fontSize, $fontFamily, $color)
+    font-size: $fontSize
+    font-family: $fontFamily
+    color: $color
+
+@mixin positionPic($posTop, $posLeft)
+    position: relative
+    top: $posTop
+    left: $posLeft
+
+.main
+    &-loop
+        max-width: 1600px
+        height: 410px
+        background-color: grey
+        background-image: url(/pictures/main-pic.jpg)
+        background-position: center
+        background-repeat: no-repeat
+    &-icons
+        box-sizing: content-box
+        padding-top: 80px
+    &-icons__text
+        @include flex(flex, row, center, center)
+    &-icons__someText span
+        @include style(16px, $font2, $color7)
+        margin: 0 20px
+        text-transform: uppercase
+    &-icons__someInfoTitle
+        @include style(14px, $font3, $color7)
+        width: 880px
+        margin: 0 auto
+        margin-top: 10px
+        text-align: center
+        line-height: 2
+        display: none
+    &-icons__someInfoTitle_open
+        display: block
+    &-icons__menu
+        @include flex(flex, row, space-between, center)
+        margin-top: 40px
+        box-sizing: content-box
+        padding: 0 30px
+    &-icons__menuFrame
+        width: 135px
+    &-icons__menuFrame p
+        @include style(14px, $font2, $color7)
+        margin-top: 20px
+        text-transform: uppercase
+    &-icons__menuCircle
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        border: 2px solid $color3
+        margin: 0 auto
+        background-position: center
+        background-repeat: no-repeat
+    &-icons__menuCircle_green
+        background-color: $color3
+    &-icons__menuCircleFirst
+        background-image: url(/pictures/bulbWhite.png)
+    &-icons__menuCircleSecond
+        background-image: url(/pictures/rocketWhite.png)
+    &-icons__menuCircleThird
+        background-image: url(/pictures/retortWhite.png)
+    &-icons__menuCircleFourth
+        background-image: url(/pictures/ribbonWhite.png)
+    &-pics
+    &-pics__text
+        margin-top: 80px
+        margin-bottom: 40px
+        @include flex(flex, row, center, center)
+    &-pics__someText
+        @include style(16px, $font2, $color4)
+        margin: 0 20px
+        text-transform: uppercase
+    &-pics__menu
+        @include flex(flex, row, space-between, flex-start)
+        @media screen and (max-width: 1170px)
+            @include flex(flex, column, space-between, center)
+    &-pics__menuFrame
+        width: 373px
+    &-pics__report
+        text-align: center
+        h3
+            @include style(15px, $font2, $color4)
+            text-transform: uppercase
+            margin-top: 25px
+    &-pics__reportTitle
+        @include style(12px, $font2, $color3)
+        margin-top: 12px
+    &-pics__reportAbout
+        @include style(14px, $font3, $color4)
+        margin-top: 20px
+        line-height: 2
+    &-select
+        height: 110px
+        margin-top: 50px
+    &-select__frame
+        margin: 0 auto
+        @include flex(flex, row, center, flex-start)
+    &-select__tabs
+        width: 100px
+        height: 30px
+        margin-right: 10%
+        @include style(14px, $font2, $color4)
+    &-select__tabsContainer
+        width: 400px
+        @include style(16px, $font3, $color4)
+    &-select
+        .main-select__tabsContainer
+            > *
+                display: none
+    &-select
+        .main-select__tabsContainer
+            > .main-select__tabsContainer_select
+                display: block

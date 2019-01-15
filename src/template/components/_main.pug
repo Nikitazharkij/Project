@@ -1,0 +1,54 @@
+div.main
+    div.main-loop
+        div.main-icons.block_roll
+            div.main-icons__text
+                img(src= "/pictures/line.png")
+                div.main-icons__someText
+                    span Our process
+                img(src= "/pictures/line.png")
+            div.main-icons__someInfo
+                p.main-icons__someInfoTitle.main-icons__someInfoTitle_open= main.info1
+                p.main-icons__someInfoTitle= main.info2
+                p.main-icons__someInfoTitle= main.info3
+                p.main-icons__someInfoTitle= main.info4
+            div.main-icons__menu
+                div.main-icons__menuFrame
+                    div.main-icons__menuCircle.main-icons__menuCircleFirst.main-icons__menuCircle_green
+                    p= main.topic1
+                div.main-icons__menuFrame
+                    div.main-icons__menuCircle.main-icons__menuCircleSecond
+                    p= main.topic2
+                div.main-icons__menuFrame
+                    div.main-icons__menuCircle.main-icons__menuCircleThird
+                    p= main.topic3
+                div.main-icons__menuFrame
+                    div.main-icons__menuCircle.main-icons__menuCircleFourth
+                    p= main.topic4
+    div.main-pics.block_roll
+        div.main-pics__text
+            img(src= "/pictures/line.png")
+            div.main-pics__someText
+                p Our recent projects
+            img(src= "/pictures/line.png")
+        div.main-pics__menu
+            -
+            each item in mainPics
+                div.main-pics__menuFrame
+                    img(src= item.href)
+                    div.main-pics__report
+                        h3= item.title
+                        p.main-pics__reportTitle= item.previewContent
+                        p.main-pics__reportAbout= item.fullContent
+    div.main-select.block_roll
+        div.main-select__frame
+            select.main-select__tabs
+                -
+                each item in select
+                    option(value= item.tab)= item.tab
+
+            div.main-select__tabsContainer
+                -
+                each item in select
+                    div(data-name= item.tab)= item.content
+
+

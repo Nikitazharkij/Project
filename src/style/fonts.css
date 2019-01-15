@@ -1,0 +1,33 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('./fonts/BebasRegular/BebasRegular.eot');
+    src: url('./fonts/BebasRegular/BebasRegular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/BebasRegular/BebasRegular.woff') format('woff'),
+         url('./fonts/BebasRegular/BebasRegular.ttf') format('truetype'),
+         url('./fonts/BebasRegular/BebasRegular.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RalewayExtraBold"; */
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: url('./fonts/RalewayExtraBold/RalewayExtraBold.eot');
+    src: url('./fonts/RalewayExtraBold/RalewayExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/RalewayExtraBold/RalewayExtraBold.woff') format('woff'),
+         url('./fonts/RalewayExtraBold/RalewayExtraBold.ttf') format('truetype'),
+         url('./fonts/RalewayExtraBold/RalewayExtraBold.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RalewayLight"; */
+@font-face {
+    font-family: 'RalewayLight';
+    src: url('./fonts/RalewayLight/RalewayLight.eot');
+    src: url('./fonts/RalewayLight/RalewayLight.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/RalewayLight/RalewayLight.woff') format('woff'),
+         url('./fonts/RalewayLight/RalewayLight.eot.ttf') format('truetype'),
+         url('./fonts/RalewayLight/RalewayLight.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
