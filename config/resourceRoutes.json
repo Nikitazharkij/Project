@@ -1,11 +1,11 @@
 [
     {
-        "from": "./node_modules/bootstrap/dist/",
-        "to": "/libs/bootstrap"
+        "from": "./node_modules/bootstrap/dist/css/",
+        "to": "/bootstrap"
     },
     {
         "from": "./node_modules/jquery/dist/",
-        "to": "/libs/jquery"
+        "to": "/jquery"
     },
     {
         "from": "./temp/style/",
